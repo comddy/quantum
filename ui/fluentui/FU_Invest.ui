@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>977</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>977</width>
+    <height>393</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>977</width>
+    <height>393</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>投资组合优化</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>20</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>已添加股票</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>60</y>
+     <width>589</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>添加股票组合</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="contextMenuPolicy">
+     <enum>Qt::CustomContextMenu</enum>
+    </property>
+    <property name="text">
+     <string>添加4只股票可启动程序，最多添加8只。（相关数据截止于2023年4月1日）</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>88</y>
+     <width>641</width>
+     <height>299</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>时间范围</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="PushButton" name="pushButton">
+      <property name="text">
+       <string>近三个月</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="PushButton" name="pushButton_2">
+      <property name="text">
+       <string>近六个月</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="PushButton" name="pushButton_3">
+      <property name="text">
+       <string>近一年</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>投资品类</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="PushButton" name="pushButton_4">
+      <property name="text">
+       <string>股票</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="PushButton" name="pushButton_5">
+      <property name="text">
+       <string>债券</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="PushButton" name="pushButton_6">
+      <property name="text">
+       <string>期货</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>品类细分</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="PushButton" name="pushButton_7">
+      <property name="text">
+       <string>主板</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="PushButton" name="pushButton_8">
+      <property name="text">
+       <string>创业板</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="PushButton" name="pushButton_9">
+      <property name="text">
+       <string>科创板</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="PushButton" name="pushButton_10">
+      <property name="text">
+       <string>中小板</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="5">
+     <widget class="TableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="ListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>60</y>
+     <width>301</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="PushButton" name="resetBtn">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>320</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </widget>
+  <widget class="PushButton" name="startCalcBtn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>320</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始计算</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TableView</class>
+   <extends>QTableView</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ListView</class>
+   <extends>QListView</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

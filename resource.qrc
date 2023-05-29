@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/spear">
+    	<file>resource/logo.png</file>
+    </qresource>
+</RCC>
