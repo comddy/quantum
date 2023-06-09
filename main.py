@@ -8,8 +8,8 @@ from PyQt5.QtWidgets import QApplication, QWidget
 from view.Ui_Main import Ui_Form
 from Invest import InvestInterface
 from FuturePrice import FuturePriceInterface
-
-        
+from CRAMC import CRAMCInterface
+from AD import ADInterface        
 
 class MainWindow(QWidget, Ui_Form):
     def __init__(self):
@@ -18,8 +18,12 @@ class MainWindow(QWidget, Ui_Form):
         self.setWindowTitle("Quantum Spear")
         self.invest = InvestInterface()
         self.futurePrice = FuturePriceInterface()
+        self.CRAMC = CRAMCInterface()
+        self.AD = ADInterface()
         self.frame1.mousePressEvent = lambda a0: self.toggle_window(self.invest)
         self.frame2.mousePressEvent = lambda a0: self.toggle_window(self.futurePrice)
+        self.frame3.mousePressEvent = lambda a0: self.toggle_window(self.CRAMC)
+        self.frame4.mousePressEvent = lambda a0: self.toggle_window(self.AD)
 
     def toggle_window(self,window):
         if window.isVisible():

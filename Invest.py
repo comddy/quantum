@@ -132,8 +132,9 @@ class InvestInterface(QtWidgets.QWidget, Ui_Form):
         self.tableView.horizontalHeader().setHighlightSections(False) #表头不塌
         self.tableView.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
         self.tableView.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
+        
         self.initData()
-
+        
         
         self.listModel.dataChanged.connect(self.listView.update)
         self.resetBtn.clicked.connect(lambda: (self.listModel.clear(), self.startCalcBtn.setDisabled(True)))

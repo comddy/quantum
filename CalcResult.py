@@ -107,7 +107,7 @@ class Example(QDialog):
 
         chart = QChart()
         chart.addSeries(series)
-        chart.setTitle("饼图")
+        chart.setTitle("资产分配结果")
 
 
         chart_view = QChartView(chart)
