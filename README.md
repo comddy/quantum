@@ -20,5 +20,5 @@ python main.py
 
 效果图：
 
-![image-20230611161730924](C:\Users\zhuima\Desktop\彭琼-新材料\quantum-master\assets\image-20230611161730924.png)
+![image-20230611161730924](.\assets\image-20230611161730924.png)
 
