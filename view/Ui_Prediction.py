@@ -50,6 +50,12 @@ class Ui_Form(object):
         font.setPointSize(10)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
+        self.calcProgressBar = QtWidgets.QProgressBar(Form)
+        self.calcProgressBar.setGeometry(QtCore.QRect(50, 150, 551, 41))
+        self.calcProgressBar.setMaximum(0)
+        self.calcProgressBar.setProperty("value", -1)
+        self.calcProgressBar.setFormat("")
+        self.calcProgressBar.setObjectName("calcProgressBar")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)

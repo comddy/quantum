@@ -210,6 +210,7 @@ class PredictionInterface(QtWidgets.QWidget, Ui_Form):
         self.stock_id=""
         self.stock_name=""
         self.pushButton.clicked.connect(self.startCalc)  # 调用Dialog1
+        self.calcProgressBar.hide()
 
         self.tableView.setContextMenuPolicy(Qt.CustomContextMenu)  # 设置策略为自定义菜单
         self.tableView.customContextMenuRequested.connect(self.ContextMenu)  # 菜单内容回应信号槽
@@ -224,7 +225,7 @@ class PredictionInterface(QtWidgets.QWidget, Ui_Form):
         self.comboBox.addItems(['开盘价', '最高价', '最低价','收盘价'])
 
     def startCalc(self):
-        self.PredDialog = PredictionDialog1()
+        self.PredDialog = PredictionDialog1(f"./data/invest/{self.stockType}/{self.stock_id}.xlsx")
         self.PredDialog.ui.pushButton.clicked.connect(lambda: self.start(self.PredDialog))
         self.PredDialog.exec_()
 
@@ -287,7 +288,8 @@ class PredictionInterface(QtWidgets.QWidget, Ui_Form):
 
         self.StockForecast=Stock_Forecast(name=self.stock_name,input_file_path=f"./data/invest/{self.stockType}/{self.stock_id}.xlsx",start_time=self.start_time,end_time=self.end_time,cache_save_path=f"./data/Cache/",type_name=self.stockType_name,type_id=self.stockType_id,png_save_path=self.png_save_path)
         self.StockForecast.start()
-        self.StockForecast.finished.connect(self.run_Dialog2)
+        self.StockForecast.started.connect(lambda:(self.setDisabled(True),self.calcProgressBar.show()))
+        self.StockForecast.finished.connect(lambda:(self.run_Dialog2(),self.setDisabled(False),self.calcProgressBar.hide()))
 
     def run_Dialog2(self):
         self.PredDialog_2=PredictionDialog2()

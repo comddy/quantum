@@ -137,7 +137,7 @@ def stock_price_qrnn(name,train_path,train_num,test_path,test_num,type,type_numb
         batch_mean = np.mean(batch_error_list)
         error_list.append(batch_mean)
         batch_error_list.clear()
-        # print('Epoch: ' + str(i) + ' MSE: ' + str(batch_mean))
+        print('Epoch: ' + str(i) + ' MSE: ' + str(batch_mean))
 
     # Evaluate the performance of the model
     y_prediction_test = []
@@ -156,8 +156,8 @@ def stock_price_qrnn(name,train_path,train_num,test_path,test_num,type,type_numb
     # print("Test RMSE:", str('%.3f' % rmse_test))
     # print("Train RMSE:", str('%.3f' % rmse_train))
 
-    plt.plot(test_y, color='red', label='Real Google Stock Price')
-    plt.plot(y_prediction_test[-len(test_y):], color='blue', label='Predicted Google Stock Price')
+    plt.plot(test_y, color='red', label='Real Stock Price')
+    plt.plot(y_prediction_test[-len(test_y):], color='blue', label='Predicted Stock Price')
     plt.title(f'Queueing RNN Stocking Price Test Set')
     plt.xlabel('Day')
     plt.ylabel(f'Normalised Stocking Price')
@@ -166,8 +166,8 @@ def stock_price_qrnn(name,train_path,train_num,test_path,test_num,type,type_numb
     # plt.show()
 
 
-    plt.plot(train_y, color='red', label='Real Google Stock Price')
-    plt.plot(y_prediction_train, color='blue', label='Predicted Google Stock Price')
+    plt.plot(train_y, color='red', label='Real Stock Price')
+    plt.plot(y_prediction_train, color='blue', label='Predicted Stock Price')
     plt.title('Queueing RNN Bike Sharing Data Training Set')
     plt.xlabel('Day')
     plt.ylabel(f'Normalised Stocking Price')

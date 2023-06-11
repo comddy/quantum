@@ -119,6 +119,25 @@
     <string>请选择预测条目：</string>
    </property>
   </widget>
+  <widget class="QProgressBar" name="calcProgressBar">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>551</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>0</number>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
+   <property name="format">
+    <string/>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

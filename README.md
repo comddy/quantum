@@ -2,8 +2,6 @@
 
 > 量子应用比赛
 
-环境：python 3.9.7
-
 1.安装依赖
 
 ~~~cmd
@@ -22,5 +20,5 @@ python main.py
 
 效果图：
 
-![image-20230611161730924](https://github.com/comddy/quantum/blob/master/assets/image-20230611161730924.png)
+![image-20230611161730924](C:\Users\zhuima\Desktop\彭琼-新材料\quantum-master\assets\image-20230611161730924.png)
 
