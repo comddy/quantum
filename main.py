@@ -10,7 +10,7 @@ from Invest import InvestInterface
 from FuturePrice import FuturePriceInterface
 from CRAMC import CRAMCInterface
 from AD import ADInterface        
-
+from Prediction import PredictionInterface
 class MainWindow(QWidget, Ui_Form):
     def __init__(self):
         super().__init__()
@@ -20,10 +20,12 @@ class MainWindow(QWidget, Ui_Form):
         self.futurePrice = FuturePriceInterface()
         self.CRAMC = CRAMCInterface()
         self.AD = ADInterface()
+        self.prediction = PredictionInterface()
         self.frame1.mousePressEvent = lambda a0: self.toggle_window(self.invest)
         self.frame2.mousePressEvent = lambda a0: self.toggle_window(self.futurePrice)
         self.frame3.mousePressEvent = lambda a0: self.toggle_window(self.CRAMC)
         self.frame4.mousePressEvent = lambda a0: self.toggle_window(self.AD)
+        self.frame5.mousePressEvent = lambda a0: self.toggle_window(self.prediction)
 
     def toggle_window(self,window):
         if window.isVisible():

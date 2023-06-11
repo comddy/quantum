@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>826</width>
-    <height>618</height>
+    <width>832</width>
+    <height>746</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,7 +51,7 @@
     <cursorShape>OpenHandCursor</cursorShape>
    </property>
    <property name="text">
-    <string>量子应用</string>
+    <string>Quanfica</string>
    </property>
   </widget>
   <widget class="QFrame" name="frame1">
@@ -80,6 +80,13 @@
       <width>111</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
     </property>
     <property name="text">
      <string>投资组合优化</string>
@@ -129,6 +136,13 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>量子期权定价</string>
     </property>
@@ -177,8 +191,15 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
-     <string>CRAMC</string>
+     <string>信用风险分析</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -191,7 +212,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>xxxxxx</string>
+     <string>基于QAE算法的信用风险分析</string>
     </property>
     <property name="wordWrap">
      <bool>true</bool>
@@ -225,6 +246,13 @@
       <height>41</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
     <property name="text">
      <string>用户异常行为检测</string>
     </property>
@@ -240,6 +268,61 @@
     </property>
     <property name="text">
      <string>基于QGAN的异常行为检测</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>600</y>
+     <width>381</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>股票价格预测</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>361</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>基于QRNN的股票价格预测</string>
     </property>
     <property name="wordWrap">
      <bool>true</bool>
